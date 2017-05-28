@@ -3,3 +3,7 @@
 .DS_Store
 .sass-cache
 build/
+/node_modules
+
+# Ignore webpack temporary build location
+.tmp
