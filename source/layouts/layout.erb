@@ -9,8 +9,12 @@
     <title><%= current_page.data.title || "Highridge Homes" %></title>
     <%= stylesheet_link_tag "site.bundle" %>
   </head>
-  <body>
-    <%= yield %>
+
+  <body class="<%= page_classes %>">
+    <div class="page-content">
+      <%= yield %>
+    </div>
+
     <%= partial "partials/google_analytics" %>
     <%= javascript_include_tag "site.bundle" %>
   </body>
