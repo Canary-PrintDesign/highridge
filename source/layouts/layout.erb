@@ -8,9 +8,9 @@
     <!-- Use the title from a page"s frontmatter if it has one -->
     <title><%= current_page.data.title || "Highridge Homes" %></title>
     <%= stylesheet_link_tag "site.bundle" %>
-    <%= javascript_include_tag "site.bundle" %>
   </head>
   <body>
     <%= yield %>
+    <%= javascript_include_tag "site.bundle" %>
   </body>
 </html>
