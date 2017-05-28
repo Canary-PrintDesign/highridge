@@ -1,0 +1,11 @@
+.mobile-only {
+  @media (min-width: $site-width) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @media (max-width: $site-width - 1) {
+    display: none !important;
+  }
+}
