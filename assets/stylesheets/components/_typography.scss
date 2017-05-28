@@ -1,0 +1,12 @@
+body {
+  color: $color-body;
+  font-family: $font-family-body;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-heading;
+  text-transform: uppercase;
+}
