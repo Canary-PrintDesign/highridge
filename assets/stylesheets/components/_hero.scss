@@ -1,0 +1,13 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vw;
+  background-color: $brand-tertiary;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
