@@ -1,6 +1,10 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+configure :development do
+  activate :livereload
+end
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -14,6 +18,8 @@ activate :external_pipeline,
   command: build? ? 'yarn run build': 'yarn start',
   source: '.tmp/dist',
   latency: 1
+
+activate :directory_indexes
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
