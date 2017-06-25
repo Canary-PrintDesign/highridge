@@ -1,4 +1,50 @@
 .page-footer {
   background-color: $brand-secondary;
-  padding: 2rem 0;
+  bottom: 0; 
+  clear: both;
+  left: 0; 
+  padding: 2rem 0rem 3rem 0rem;
+  position: absolute; 
+  width: 100%; 
+  
+  .container {
+    
+  }
+
+  .site-logo {
+    float: left;
+    margin-right: 3em; 
+  }
+  
+  .column {
+    width:20%;
+    float:left;
+  }
+
+    li { 
+      float: left;
+      font-family: $font-family-heading;
+      list-style: none; 
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      text-transform: uppercase;
+  
+      a {     
+        color: white; 
+        font-size: 11px; 
+        text-decoration: none; 
+        text-decoration-style: none;
+        text-transform: uppercase;
+      }
+    } 
+
+   .login a {     
+      color: $white;
+      border: 1px solid $white;
+      float: right;
+      font-family: $font-family-heading;
+      font-size: 11px; 
+      outline: none;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      text-decoration: none; 
+    }
 }

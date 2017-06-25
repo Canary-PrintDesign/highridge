@@ -1,4 +1,34 @@
 <div class="page-footer">
   <div class="container">
-  </div>
+        <% link_to '/' do %>
+      <%= image_tag 'logo-white.png', :class => 'site-logo' %>
+    <% end %> 
+      
+        <ul> 
+          <div class="column"> 
+            <li>
+              <%= link_to 'Custom Homes', '/custom-homes' %>
+            </li>
+            <li>
+              <%= link_to 'The Process', '/process' %>
+            </li>
+          </div>
+          <div class="column"> 
+            <li>
+              <%= link_to 'Available Lots', '/available-lots' %>
+            </li> 
+            <li>
+              <%= link_to 'Meet The Team', '/meet-the-team' %>
+            </li>
+          </div>
+          <div class="column"> 
+            <li>
+              <%= link_to 'Contact', '/contact' %>
+            </li>  
+          </div>
+          <div class="login"> 
+            <%= link_to 'Client login', '/Client-login' %>
+          </div> 
+        </ul> 
+      </div>
 </div>
