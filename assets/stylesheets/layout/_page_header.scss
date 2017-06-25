@@ -12,7 +12,7 @@
       font-family: $font-family-heading;
       font-size: 12px;
       font-weight: 400;
-      padding: .5rem 0rem 3rem 0rem;
+      padding: .5rem 0rem 2rem 0rem;
       text-transform: uppercase;
 
       .site-logo {
@@ -23,13 +23,15 @@
         padding: 1.5em 1rem;
         position: absolute;
         top:0;
-        height: 80px;
+        width: 150px;;
       }
       
       .reach {
         float: right;
         font-size: 10px;
         padding-right: 1rem;
+        padding-top: 0.5rem;
+        text-transform: none;
         
         .call {
           font-family: $font-family-heading;
@@ -42,6 +44,7 @@
             box-shadow: none;
             background-color: transparent;
             float: right;
+            margin: -0.125rem .5rem 0rem 0.5rem;
             width: 11px;
           }
         
@@ -49,18 +52,21 @@
             box-shadow: none;
             background-color: transparent;
             float: right;
+            margin: -0.05rem .5rem 0rem 0.5rem;
             height: 15px;
           }
       }
 
       ul {
         clear: both;
-        padding-right: 1rem;
+        padding-right: 1.5rem;
+        padding-top: 1rem;
 
         li {
           float: right;
           list-style: none;
-          width: 12%;
+          width: 13%;
+          
         
           a {
             color: $brand-secondary;
