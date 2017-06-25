@@ -1,5 +1,31 @@
 <div class="page-header">
   <div class="container">
-    <h1><a href="/" class="site-logo">HH</a></h1>
+        <nav class="nav">
+      <% link_to '/' do %>
+        <%= image_tag 'logo-white.png', :class => 'site-logo' %>
+      <% end %>
+      <span class="reach">
+        Reach us at <span class="call">1-250-558-3339</span>
+          <%= image_tag 'facebook_icon.png', :class => 'facebook' %>
+            <%= image_tag 'houz_icon.png', :class => 'houz' %>
+      </span>
+      <ul>
+        <li>
+          <%= link_to 'The Process', '/process' %>
+        </li>
+        <li>
+          <%= link_to 'Custom Homes', '/custom-homes' %>
+        </li>
+        <li>
+          <%= link_to 'Available Lots', '/available-lots' %>
+        </li>
+        <li>
+          <%= link_to 'Meet The Team', '/meet-the-team' %>
+        </li>
+        <li>
+          <%= link_to 'Contact', '/contact' %>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>

@@ -5,5 +5,77 @@
 
   .container {
     background-color: $white;
+  
+    nav {
+      box-shadow: 0px 0px 10px #888888;
+      color: $brand-secondary;
+      font-family: $font-family-heading;
+      font-size: 12px;
+      font-weight: 400;
+      padding: .5rem 0rem 3rem 0rem;
+      text-transform: uppercase;
+
+      .site-logo {
+        background-color: $brand-secondary;
+        box-shadow: 0px 0px 10px #888888;
+        float: left;
+        margin: 0rem 0rem;
+        padding: 1.5em 1rem;
+        position: absolute;
+        top:0;
+        height: 80px;
+      }
+      
+      .reach {
+        float: right;
+        font-size: 10px;
+        padding-right: 1rem;
+        
+        .call {
+          font-family: $font-family-heading;
+          font-size: 12px;
+          font-weight: 800; 
+          margin-left: 0.25rem
+        }
+        
+          .houz {
+            box-shadow: none;
+            background-color: transparent;
+            float: right;
+            width: 11px;
+          }
+        
+          .facebook {
+            box-shadow: none;
+            background-color: transparent;
+            float: right;
+            height: 15px;
+          }
+      }
+
+      ul {
+        clear: both;
+        padding-right: 1rem;
+
+        li {
+          float: right;
+          list-style: none;
+          width: 12%;
+        
+          a {
+            color: $brand-secondary;
+            float: right;
+            list-style: none;
+            text-decoration: none;
+          }
+          
+          a:active {
+            border-bottom: 2px solid $brand-primary;
+            opacity: .7;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
