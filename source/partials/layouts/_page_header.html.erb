@@ -5,25 +5,30 @@
         <%= image_tag 'logo-white.png', :class => 'site-logo' %>
       <% end %>
       <span class="reach">
-        Reach us at <span class="call">1-250-558-3339</span>
-          <%= image_tag 'houz_icon.png', :class => 'houz' %>
-            <%= image_tag 'facebook_icon.png', :class => 'facebook' %>
+        Reach us at 
+          <a href="tel:1-250-558-3339" class="call">1-250-558-3339</a>
+          <% link_to 'https://www.houzz.com/pro/glinsbockel/highridge-homes-ltd' do %>
+            <%= image_tag 'houz_icon.png', :class => 'houz' %>
+          <% end %>
+            <% link_to 'https://www.facebook.com/highridgehomesvernon/' do %>
+              <%= image_tag 'facebook_icon.png', :class => 'facebook' %>
+            <% end %>
       </span>
       <ul>
         <li>
-          <%= link_to 'The Process', '/process' %>
-        </li>
-        <li>
-          <%= link_to 'Custom Homes', '/custom-homes' %>
-        </li>
-        <li>
-          <%= link_to 'Available Lots', '/available-lots' %>
+          <%= link_to 'Contact', '/contact' %>
         </li>
         <li>
           <%= link_to 'Meet The Team', '/meet-the-team' %>
         </li>
         <li>
-          <%= link_to 'Contact', '/contact' %>
+          <%= link_to 'Available Lots', '/available-lots' %>
+        </li>
+        <li>
+          <%= link_to 'The Process', '/process' %>
+        </li>
+        <li>
+          <%= link_to 'Custom Homes', '/custom-homes' %>
         </li>
       </ul>
     </nav>
