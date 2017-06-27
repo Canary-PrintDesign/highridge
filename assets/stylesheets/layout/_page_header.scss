@@ -1,84 +1,72 @@
-.page-header {
+.nav-header {
   position: absolute;
   top: 0;
   width: 100%;
 
-  .container {
+  .nav-container {
+    @include span(12);
     background-color: $white;
-    padding: 0;
+    height: $nav-height;
+    box-shadow: 5px 0 5px -5px #888888;
+
+    .logo-link:hover {
+      opacity: 1;
+    }
+
+    .site-logo {
+      background-color: $brand-secondary;
+      box-shadow: -5px 0 5px -5px #888888;
+      float: left;
+      padding: 30px;
+      position: absolute;
+      top:0;
+      width: 186px;
+    }
+
+    .contact {
+      color: $thunder;
+      font-family: $font-family-heading;
+      @include span(12);
+      padding-top: 15px;
+      color: $thunder;
+      text-align: right;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: none;
+
+      .phone {
+        color: $thunder;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .social {
+        float: right;
+        height: 20px;
+        padding-left: 15px;
+      }
+    }
 
     nav {
-      box-shadow: 0px 0px 10px #888888;
-      font-family: $font-family-heading;
-      font-size: 13px;
-      padding: .35rem 0rem 1.75rem 0rem;
-      text-transform: uppercase;
-      word-spacing: 3px;
+      @include span(12);
 
-      .site-logo {
-        background-color: $brand-secondary;
-        box-shadow: 0px 0px 10px #888888;
-        float: left;
-        padding: 1.5em 1rem;
-        position: absolute;
-        top:0;
-      }
-
-      .reach {
-        color: $thunder;
+      a {
+        font-family: $font-family-heading;
+        color: $brand-secondary;
+        text-transform: uppercase;
+        word-spacing: 3px;
+        font-size: 15px;
+        text-align: right;
         float: right;
-        font-size: 11px;
-        font-weight: 500;
-        padding-right: 2rem;
-        padding-top: 0.75rem;
-        text-transform: none;
+        font-weight: 400;
+        margin: 30px 20px 0px 20px;
 
-        .call {
-          color: $thunder;
-          font-family: $font-family-heading;
-          font-size: 13px;
-          font-weight: 800;
-          text-decoration: none;
+        &:first-child {
+          margin-right: 0px;
         }
 
-        .houz {
-          float: right;
-          margin: -0.125rem 0rem 0rem 0.5rem;
-          height: 20px
-        }
-
-        .facebook {
-          float: right;
-          margin: -0.05rem .5rem 0rem 1rem;
-          height: 20px;
-        }
-      }
-
-      ul {
-        clear: both;
-        padding-right: 1.75rem;
-        padding-top: 1rem;
-
-        li {
-          float: right;
-          font-weight: 500;
-          list-style: none;
-          margin-left: 20px;
-          padding: 0.25rem;
-
-
-          a {
-            color: $brand-secondary;
-            float: right;
-            list-style: none;
-            text-decoration: none;
-          }
-
-          a:active {
-            border-bottom: 2px solid $brand-primary;
-            opacity: .7;
-            text-decoration: none;
-          }
+        &:hover, &:active {
+          opacity: .7;
         }
       }
     }
