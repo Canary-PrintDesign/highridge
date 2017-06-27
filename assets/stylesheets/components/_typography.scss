@@ -10,3 +10,11 @@ h4 {
   font-family: $font-family-heading;
   text-transform: uppercase;
 }
+
+a {
+  text-decoration: none;
+
+  &:hover, &:active {
+    opacity: .7;
+  }
+}
