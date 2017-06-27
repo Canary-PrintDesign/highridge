@@ -18,3 +18,12 @@ $font-family-heading: 'Montserrat', sans-serif;
 
 
 $site-width: 1024px;
+
+// Susy settings
+$susy: (
+  columns: 12,
+  gutters: 30px/70px,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+);
