@@ -1,13 +1,57 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 30vw;
+  margin-top: $nav-height / 2;
+  height: 500px;
   background-color: $brand-tertiary;
   color: $white;
+  z-index: -10;
 
   a {
     color: $white;
+  }
+
+  .hero-image {
+    @include span(12);
+    position: relative;
+
+    img {
+      width: 100%;
+      margin-top: $nav-height / 2;
+      box-shadow: 0px 0px 10px 0px $thunder;
+    }
+
+    header {
+      @include span(11);
+      right: 0;
+      position: absolute;
+      text-align: left;
+      top: 200px;
+    }
+  }
+}
+
+
+.home-hero {
+  color: $white;
+  z-index: -10;
+
+  a {
+    color: $white;
+  }
+
+  .hero-image {
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+
+    header {
+      @include span(12);
+      position: absolute;
+      text-align: center;
+      top: 300px;
+    }
   }
 }

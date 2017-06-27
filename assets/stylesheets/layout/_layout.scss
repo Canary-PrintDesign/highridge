@@ -8,7 +8,11 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: $site-width;
   margin: 0 auto;
-  padding: 0px 10px 0px 10px;
+}
+
+.clearfix {
+  @include susy-clearfix;
 }
