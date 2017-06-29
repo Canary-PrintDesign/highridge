@@ -7,16 +7,75 @@ bg: herollax2
 ---
 
 <div class="container">
-  <h2>#1 builder in the North Okanagan</h2>
-  <a hred="#" class="btn primary">Find out how we do it</a>
+
+  <div class="intro-section">
+    <div class="intro">
+      <h2>#1 builder in the North Okanagan</h2>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+      </p>
+    </div>
+    <div class="intro-cta">
+      <p>Find out how <br><%= link_to 'we do it.', '#' %></p>
+    </div>
+  </div>
 </div>
 
 <div class="cta-section">
   <div class="container">
-    <h2>Show homes</h2>
+    <div class="cta-content">
+      <h2>Custom Homes</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+      <div class="custom-home-button">
+        <h4><%= link_to 'View our homes', '#' %></h4>
+      </div>
+    </div>
+    <div class="cta-cards">
+      <div class="cta-card1">
+        <%= partial "partials/custom_home_card", locals: {
+          href: "/house1",
+          image: "images/home-cards/card1.jpg",
+          availability: "Available for viewing",
+          title: "Spectacular Coldstream Rancher",
+          address: "1 Braeburn Place, Coldstream, BC",
+          excerpt: "Luxurious rancher located on large lot on quiet and private Coldstream cul-de-sac."
+        } %>
+      </div>
+      <div class="cta-card2">
+        <%= partial "partials/custom_home_card", locals: {
+          href: "thing thing",
+          image: "images/home-cards/card1.jpg",
+          availability: "Available for viewing",
+          title: "Spectacular Coldstream Rancher",
+          address: "2 Braeburn Place, Coldstream, BC",
+          excerpt: "Luxurious rancher located on large lot on quiet and private Coldstream cul-de-sac."
+        } %>
+      </div>
+    </div>
   </div>
 </div>
 
+
+<div class="clearfix"></div>
+
+
 <div class="container">
-  <h2>Get in touch</h2>
+  <div class="testimonial-left">
+    <p>After a bad experience years ago with another builder we were a little nervous going into the build - but Highridge was on site every day and carefully walked us through each stage and decision.</p>
+  </div>
+  <div class="contact-cta">
+    <h2>Get in touch</h2>
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et q
+    </p>
+    <p class="call-us">
+      Give us a call at <%= link_to '1-250-558-3339', 'tel:+1-250-558-3339' %>
+    </p>
+
+  </div>
+
+
+
+
+
 </div>

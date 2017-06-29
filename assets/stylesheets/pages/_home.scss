@@ -1,0 +1,108 @@
+.home {
+
+  .intro-section {
+    display: flex;
+    padding-bottom: $nav-height;
+
+    .intro {
+      @include span(7);
+      padding-left: span(1);
+    }
+
+    .intro-cta {
+      @include span(2);
+      padding-left: span(1 wide);
+      align-self: flex-end;
+
+      p {
+        font-family: $font-family-heading;
+        font-weight: 500;
+        color: $white;
+        background: #e37c1c;
+        padding: 1em;
+
+        a {
+          color: $white;
+          border-bottom: 2px solid $white;
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    padding: 0;
+    height: 380px;
+
+    .cta-content {
+      @include span(4 first);
+
+      .custom-home-button {
+        @include span(3 of 4 first);
+        margin-top: 20px;
+        background: $white;
+        text-align: center;
+
+        a {
+          color: $brand-primary;
+          border-bottom: 2px solid $brand-primary;
+        }
+      }
+    }
+
+    .cta-cards {
+      position: relative;
+      top: -20px;
+
+      .container {
+        .home-card {
+          margin-bottom: 0;
+
+          .availability {
+            display: none;
+          }
+
+          .details {
+            background: $white;
+            color: $thunder;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            > * {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .cta-card1 {
+      }
+
+      .cta-card2 {
+      }
+    }
+  }
+
+  .contact-cta {
+    @include span(4);
+    padding-left: span(1 wide);
+
+    p {
+
+    }
+
+    .call-us {
+      font-family: $font-family-heading;
+      font-weight: 500;
+    }
+
+    a {
+      font-weight: 600;
+      color: $thunder;
+      border-bottom: 2px solid $brand-primary;
+    }
+  }
+
+
+
+
+}

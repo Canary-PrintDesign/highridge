@@ -1,5 +1,5 @@
 .testimonial-left, .testimonial-right {
-  @include span(3);
+  @include span(4);
   font-family: $font-family-body;
   font-style: italic;
   line-height: 28px;
@@ -12,15 +12,17 @@
     color: #df7c2e;
     position: absolute;
   }
-
 }
 
 .testimonial-left {
-  margin-left: span(1.5);
+  padding-left: span(1);
+
+  p {
+    margin-left: 20px;
+  }
 
   ::before {
-    left:-25px;
-    top: 20px;
+    margin-left: -25px;
   }
 
   ::after {
@@ -30,9 +32,13 @@
 }
 
 .testimonial-right {
-  margin-right: span(1.5);
+  padding-right: span(1 wide);
   float: right;
   text-align: right;
+
+  p {
+    margin-right: 20px;
+  }
 
   ::before {
     left: -10px;
@@ -42,7 +48,6 @@
 
   ::after {
     line-height: 0;
-    right: -20px;
     bottom: 30px;
   }
 }
