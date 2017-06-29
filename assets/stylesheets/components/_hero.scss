@@ -1,9 +1,51 @@
+.hero-white {
+  height: $nav-height / 2;
+  width: 100%;
+  background-color: $white;
+}
+
+// For all hero images
+.hero-image {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  header {
+    max-width: 1170px;
+    @include span(11);
+    padding-left: span(1);
+    position: absolute;
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 400;
+      text-align: left;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+// For all hero images EXCEPT Home
 .hero {
-  margin-top: $nav-height / 2;
+  padding-bottom: 35px;
+  // margin-top: $nav-height / 2;
   height: 500px;
   background-color: $brand-tertiary;
   color: $white;
-  z-index: -10;
 
   a {
     color: $white;
@@ -11,47 +53,68 @@
 
   .hero-image {
     @include span(12);
-    position: relative;
 
     img {
-      width: 100%;
-      margin-top: $nav-height / 2;
+      margin-top: $nav-height + 110px;
       box-shadow: 0px 0px 10px 0px $thunder;
     }
 
     header {
-      @include span(11);
-      right: 0;
-      position: absolute;
-      text-align: left;
       top: 200px;
     }
   }
 }
 
+// For ONLY Home hero
 
-.home-hero {
-  color: $white;
-  z-index: -10;
-
-  a {
+.home {
+  .home-hero {
+    padding-bottom: 35px;
     color: $white;
-  }
 
-  .hero-image {
-    width: 100%;
-    position: relative;
-    margin: 0;
-
-    img {
-      width: 100%;
+    a {
+      color: $white;
     }
 
-    header {
-      @include span(12);
-      position: absolute;
-      text-align: center;
-      top: 300px;
+    .hero-image {
+      width: 100%;
+      margin: 0;
+
+      header {
+        margin-left: span(.23);
+        top: 300px;
+      }
+    }
+  }
+}
+
+
+.herollax1 { background: url(/images/bg1.jpg) no-repeat center center fixed; }
+.herollax2 { background: url(/images/bg2.jpg) no-repeat top center fixed;}
+.herollax3 { background: url(/images/bg3.jpg) no-repeat center center fixed; }
+.herollax4 { background: url(/images/bg4.jpg) no-repeat center center fixed; }
+.herollax5 { background: url(/images/bg5.jpg) no-repeat center center fixed; }
+
+// Homepage ONLY
+.home-hero {
+  .hero-image {
+    .herollax {
+    height: 700px;
+    background-size: cover;
+    }
+  }
+}
+
+// All pages EXCEPT homepage
+.hero {
+  .hero-image {
+    box-shadow: 0px 0px 10px 0px $thunder;
+    height: $nav-height + 555px;
+    margin-top: -55px;
+
+    .herollax {
+      background-size: 1170px auto;
+      height: $nav-height + 555px;
     }
   }
 }
