@@ -2,13 +2,13 @@
 
 @import "constants";
 
-@import "components/typography";
 @import "components/button";
-@import "components/hero";
 @import "components/cta_section";
 @import "components/custom_home_card";
-@import "components/testimonials";
+@import "components/hero";
 @import "components/team_member";
+@import "components/typography";
+@import "components/testimonials";
 
 
 @import "layout/breakpoints";
@@ -16,8 +16,9 @@
 @import "layout/page_header";
 @import "layout/page_footer";
 
-@import "pages/home";
-// @import "pages/the_process";
 // @import "pages/available_lots";
+@import "pages/contact";
+@import "pages/home";
 // @import "pages/meet_the_team";
-// @import "pages/contact";
+// @import "pages/the_process";
+
