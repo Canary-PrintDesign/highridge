@@ -37,7 +37,7 @@
     a {
       color: $thunder;
       font-weight: bold;
-      border-bottom: 2px solid $brand-primary;
+      @include orange-underline;
     }
   }
 }

@@ -30,7 +30,7 @@
       a {
         font-weight: 600;
         color: white;
-        border-bottom: 2px solid $white;
+        @include white-underline;
       }
     }
   }

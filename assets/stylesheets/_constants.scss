@@ -28,3 +28,23 @@ $susy: (
   output: float,
   gutter-position: before,
 );
+
+
+
+// Custom Mixins
+
+@mixin orange-underline {
+  border-bottom: 2px solid $brand-primary;
+
+  &:hover, &:active {
+    // Code for animation goes here
+  }
+}
+
+@mixin white-underline {
+  border-bottom: 2px solid $white;
+
+  &:hover, &:active {
+    // Code for animation goes here
+  }
+}

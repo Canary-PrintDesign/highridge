@@ -23,7 +23,7 @@
 
         a {
           color: $white;
-          border-bottom: 2px solid $white;
+          @include white-underline;
         }
       }
     }
@@ -44,7 +44,7 @@
 
         a {
           color: $brand-primary;
-          border-bottom: 2px solid $brand-primary;
+          @include orange-underline;
         }
       }
     }
@@ -74,21 +74,12 @@
           }
         }
       }
-      .cta-card1 {
-      }
-
-      .cta-card2 {
-      }
     }
   }
 
   .contact-cta {
     @include span(4);
     padding-left: span(1 wide);
-
-    p {
-
-    }
 
     .call-us {
       font-family: $font-family-heading;
@@ -98,11 +89,7 @@
     a {
       font-weight: 600;
       color: $thunder;
-      border-bottom: 2px solid $brand-primary;
+      @include orange-underline;
     }
   }
-
-
-
-
 }
