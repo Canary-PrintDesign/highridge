@@ -6,25 +6,20 @@ bg: herollax2
 ---
 
 <div class="container">
-  <h1>We're here to serve you</h1>
-
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-  
-  <span> call us at 1-250-558-3339 for an info package and on-site consultation.</span>
-  
-  <div class="testimonial-right">
-    <span>Having a dedicated team of designers helping us out was fantastic!</span>
-  </div>
-</div>
-
-<%= partial "partials/team_member_list" %>
-
-<div class="cta-section">
-  <div class="container">
-    <div class="cta-content">
-      <h2>Think we can help?</h2>
-      <p>Meet with us for a free consultation and find out how we can help you make your dream home a reality.</p>
-          Give us a call at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339', :class => 'phone' %>
+  <div class="team-content">
+    <div class="team-left">
+      <h1>We're here to serve you</h1>
+      <p><%= lorem.sentences 5 %></p>
+      <strong>Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consultation.</strong>
+    </div>
+    <div class="testimonial-right">
+      <p><%= lorem.sentences 2 %></p>
     </div>
   </div>
+  <div class="clearfix"></div><br><br><br>
+
+  <%= partial "partials/team_member_list" %>
 </div>
+
+<%= partial "partials/layouts/cta_see" %>
+
