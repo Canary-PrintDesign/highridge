@@ -3,9 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  .team-left {
-    @include span(5);
-    padding-left: span(1);
+  .section-left {
 
     strong {
       font-family: $font-family-heading;

@@ -16,3 +16,10 @@ body {
 .clearfix {
   @include susy-clearfix;
 }
+
+.section-left {
+  @include span(5);
+  padding-left: span(1);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
