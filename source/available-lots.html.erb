@@ -7,53 +7,37 @@ bg: herollax2
 
 <div class="container">
   <div class="intro-section">
-    <div class="intro">
-      <h1>Oversized lots with inspiring views</h1>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,"</p>
-          <span>
-            call us at 1-250-558-3339 for an info package and on-site consulation.
-          </span>
-      <btn class="btn primary">View our complete lot      listing</btn>
+    <div class="section-left">
+      <h2>Oversized lots with <br>inspiring views</h2>
+      <p><%= lorem.sentences 4 %></p>
+      <p><%= lorem.sentences 4 %></p>
+      <p class="call">
+        Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consulation.
+      </p>
+      <p class="download">
+        Download <br><%= link_to 'subplan', '#' %>
+      </p>
+      <p class="mla-link">
+        <btn class="btn primary">View our complete lot listing</btn>
+      </p>
+    </div>
+    <div class="testimonial-right">
+      <p><%= lorem.sentences 3 %></p>
     </div>
   </div>
 </div>
 
 
-
-
+<h1> Insert Google Map with available lots here </h1>
 
 <div class="container">
-    <div class="outro-section">
-      <div class="outro">
-        <!--
-        <div class="testimonial-right">
-          <span>Testimonial related to puchasing a lot, getting their dream location, etc. lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          </span>
-        </div>
-      </div>
-    </div>
-</div> -->
-
-<!-- Insert Google Map with available lots here -->
-
-<!--
-<div class="container">
-  <div class="clearfix"></div>
-    <div class="outro-section">
-      <div class="outro">
-        
-        <div class="testimonial-left">
-          <span>After a bad experience years ago with another builder we were a little nervous going into the build-but Highridge was on site every day and carefully waked us though each stage and decision.</span>
-        </div> -->
-        
-        <h2>Get in touch</h2>
-        <span>
-          lorem ipsum dolor sit amet, consecteur adiposicing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliqua.
-        </span>
-        <span>
-          Give us a call at 1-250-558-3339
-        </span>
-      </div>
+  <div class="testimonial-left">
+    <p><%= lorem.sentences 4 %></p>
+  </div>
+  <div class="get-in-touch">
+    <h2>Get in touch</h2>
+    <p><%= lorem.sentences 1 %></p>
+    <p><strong>Give us a call at</strong> <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %></p>
   </div>
 </div>
 
