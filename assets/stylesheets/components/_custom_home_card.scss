@@ -1,11 +1,13 @@
-.home-card:first-child {
+// Remove margin on first card in each row for Desktop
+.custom-homes .home-card:first-child {
   @include first;
 }
 
-.home-card:nth-child(3n + 4) {
+.custom-homes .home-card:nth-child(3n + 4) {
   @include first;
 }
 
+// All home cards, including Homepage
 .home-card {
   @include span (4);
   margin-bottom: 60px;
