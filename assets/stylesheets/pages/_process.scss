@@ -1,0 +1,41 @@
+.process-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .section-left {
+    
+  }
+  
+    .process-right {
+      @include span (6);
+      padding-left: (1 wide);
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+}
+
+.in-house {
+    @include span (5);
+    padding-left: span(1);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+} 
+  
+.warranty {
+  @include span (6);
+  padding-left: span (1);
+  margin-bottom: 30px;
+  
+
+  a {
+    border-bottom: none;
+    height: 70px;
+
+    img {
+      // width: 100%;
+      max-height: 70px;
+    }
+  }
+}
+

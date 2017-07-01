@@ -6,27 +6,48 @@ bg: herollax2
 ---
 
 <div class="container">
-  <h1>Build your dream home</h1>
-
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-  
-  <span> call us at 1-250-558-3339 for an info package and on-site consultation.
-  </span>
-  
-  <div class="testimonial-right">
-    <span> We loved following the schedule on BuilderTrend.
-    </span>
-  </div>
-</div>
-
-
-
-<div class="cta-section">
-  <div class="container">
-    <div class="cta-content">
-      <h2>Link what you see?</h2>
-      <p>Meet with us for a free consultation and find out how we can help you make your dream home a reality.</p>
-          Give us a call at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339', :class => 'phone' %>
+  <div class="process-content">
+    <div class="section-left">
+      <h1>Build your dream home</h1>
+        <p><%= lorem.sentences 5 %></p>
+        <strong>Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consultation.</strong>
     </div>
+    <div class="testimonial-right">
+      <p><%= lorem.sentences 2 %></p>
+    </div> 
   </div>
 </div>
+  
+<div class="clearfix"></div>
+  
+<div class="container">
+  <%= partial "partials/process_video" %>
+</div>
+    
+  
+<div class="container">
+  <div class="process-content">
+  <div class="in-house">
+    <%= partial "partials/in_house" %>
+  </div>
+  
+  <div class="warranty">
+    <%= partial "partials/warranty" %>
+  </div>
+  </div>
+
+  <div class="process-content">
+  <div class="section-left">
+    <%= partial "partials/process_video2" %>
+  </div>
+<div class="process-right">
+  <h2>Our process is second to none</h2>
+    <p><%= lorem.sentences 6 %></p>
+      <strong>Download more info on <%= link_to 'our process', '/' %></strong>
+    </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<%= partial "partials/layouts/cta_see" %>
