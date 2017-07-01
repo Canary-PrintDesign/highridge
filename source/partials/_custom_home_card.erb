@@ -1,18 +1,16 @@
-<div class="container">
-  <% content_tag(:div, class: "home-card") do %>
-    <% link_to(href, class: "product-tile") do %>
-      <div class="card-image">
-        <%= image_tag image %>
-      </div>
-    <% end %>
-    <div class="availability">
-      <span><%= availability %></span>
-    </div>
-    <div class="details">
-      <h3><%= title %></h3>
-      <span class="address"><%= address %></span>
-      <p><%= excerpt %>
-      <p><a href="<%= href %>">Learn More</a>
+<% content_tag(:div, class: "home-card") do %>
+  <% link_to(href, class: "product-tile") do %>
+    <div class="card-image">
+      <%= image_tag image %>
     </div>
   <% end %>
-</div>
+  <div class="availability">
+    <span><%= availability %></span>
+  </div>
+  <div class="details">
+    <h3><%= title %></h3>
+    <span class="address"><%= address %></span>
+    <p><%= excerpt %>
+    <p><a href="<%= href %>">Learn More</a>
+  </div>
+<% end %>

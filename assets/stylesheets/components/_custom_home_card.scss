@@ -1,3 +1,11 @@
+.home-card:first-child {
+  @include first;
+}
+
+.home-card:nth-child(3n + 4) {
+  @include first;
+}
+
 .home-card {
   @include span (4);
   margin-bottom: 60px;
