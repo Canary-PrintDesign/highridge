@@ -10,12 +10,6 @@
     strong {
       font-family: $font-family-heading;
       font-weight: 500;
-
-      a {
-        color: $thunder;
-        font-weight: 600;
-        @include orange-underline;
-      }
     }
   }
 }

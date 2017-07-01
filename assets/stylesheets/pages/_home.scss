@@ -44,7 +44,6 @@
 
         a {
           color: $brand-primary;
-          @include orange-underline;
         }
       }
     }
@@ -84,12 +83,6 @@
     .call-us {
       font-family: $font-family-heading;
       font-weight: 500;
-    }
-
-    a {
-      font-weight: 600;
-      color: $thunder;
-      @include orange-underline;
     }
   }
 }

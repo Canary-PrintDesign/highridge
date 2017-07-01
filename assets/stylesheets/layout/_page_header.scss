@@ -58,21 +58,16 @@
         }
 
         a {
-          font-family: $font-family-heading;
           color: $brand-secondary;
-          text-transform: uppercase;
           word-spacing: 3px;
           font-size: 15px;
           text-align: right;
           font-weight: 500;
           margin: 30px 20px 0px 20px;
+          border-bottom: none;
 
           &:last-child {
             margin-right: 0px;
-          }
-
-          &:hover, &:active {
-            opacity: .7;
           }
         }
       }

@@ -1,19 +1,5 @@
 .contact {
 
-  p {
-    line-height: 2rem;
-  }
-
-.contact-left {
-    @include span(5);
-    padding-left: span(1);
-
-    a {
-      color: $thunder;
-      @include orange-underline;
-    }
-  }
-
   .contact-right {
     @include span(3);
     padding-left: span(1 wide);
@@ -22,11 +8,6 @@
     strong {
       font-weight: 500;
       text-transform: uppercase;
-    }
-
-    a {
-      color: $thunder;
-      @include orange-underline;
     }
   }
 }

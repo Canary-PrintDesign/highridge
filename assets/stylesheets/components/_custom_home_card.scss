@@ -35,9 +35,7 @@
     }
 
     a {
-      color: $thunder;
-      font-weight: bold;
-      @include orange-underline;
+      font-weight: 500;
     }
   }
 }
