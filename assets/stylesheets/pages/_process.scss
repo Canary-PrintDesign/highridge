@@ -1,41 +1,80 @@
-.process-content {
+.process-sec1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .section-left {
-    
-  }
-  
-    .process-right {
-      @include span (6);
-      padding-left: (1 wide);
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-    }
 }
 
-.in-house {
-    @include span (5);
+// The next weird code is to make the iframe responsive
+.process-video {
+  @include span(12);
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.process-sec2 {
+  margin-top: 2rem;
+
+  .sec2-a {
+    @include span(9);
     padding-left: span(1);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-} 
-  
-.warranty {
-  @include span (6);
-  padding-left: span (1);
-  margin-bottom: 30px;
-  
 
-  a {
-    border-bottom: none;
-    height: 70px;
+    h2 {
+      @include span(2 of 9 wide first);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
 
-    img {
-      // width: 100%;
-      max-height: 70px;
+    p {
+      @include span(5 of 9);
+      padding-left: span(1 wide);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      &:after {
+        clear: both;
+      }
+    }
+  }
+
+  .sec2-b {
+    @include span(12);
+
+    .warins {
+      @include span(4);
+
+      a {
+        border-bottom: none;
+      }
+    }
+
+    .warranty {
+      padding-left: span(1);
+    }
+
+    .insurance {
+      padding-left: span(1 wide);
+    }
+  }
+
+  .sec2-c {
+    padding-top: 5rem;
+
+    .sec2-c-right {
+      @include span(5);
+      padding-top: 3rem;
+
+      h2 {
+        margin-top: 0;
+      }
     }
   }
 }
-

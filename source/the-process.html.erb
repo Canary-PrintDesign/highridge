@@ -6,48 +6,65 @@ bg: herollax2
 ---
 
 <div class="container">
-  <div class="process-content">
+  <div class="process-sec1">
     <div class="section-left">
       <h1>Build your dream home</h1>
-        <p><%= lorem.sentences 5 %></p>
-        <strong>Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consultation.</strong>
+      <p><%= lorem.sentences 5 %></p>
+      <strong>Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consultation.</strong>
     </div>
     <div class="testimonial-right">
       <p><%= lorem.sentences 2 %></p>
-    </div> 
-  </div>
-</div>
-  
-<div class="clearfix"></div>
-  
-<div class="container">
-  <%= partial "partials/process_video" %>
-</div>
-    
-  
-<div class="container">
-  <div class="process-content">
-  <div class="in-house">
-    <%= partial "partials/in_house" %>
-  </div>
-  
-  <div class="warranty">
-    <%= partial "partials/warranty" %>
-  </div>
+    </div>
   </div>
 
-  <div class="process-content">
-  <div class="section-left">
-    <%= partial "partials/process_video2" %>
-  </div>
-<div class="process-right">
-  <h2>Our process is second to none</h2>
-    <p><%= lorem.sentences 6 %></p>
-      <strong>Download more info on <%= link_to 'our process', '/' %></strong>
-    </div>
-    </div>
-</div>
+  <div class="clearfix"></div>
 
-<div class="clearfix"></div>
+  <div class="process-video">
+    <iframe src="https://player.vimeo.com/video/119413042?byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+  <div class="process-sec2">
+    <div class="sec2-a">
+      <h2>In House Design</h2>
+      <p><%= lorem.sentences 3 %></p>
+
+      <h2>In House Drafting</h2>
+      <p><%= lorem.sentences 3 %></p>
+
+      <h2>In House After-Sales Service</h2>
+      <p><%= lorem.sentences 3 %></p>
+    </div>
+
+    <div class="sec2-b">
+      <div class="warins warranty">
+        <% link_to '#' do %>
+          <%= image_tag '2-5-10.png' %>
+        <% end %>
+          <p><%= lorem.sentences 2 %></p>
+      </div>
+
+      <div class="warins insurance">
+        <% link_to '#' do %>
+          <%= image_tag 'travelers.png' %>
+        <% end %>
+          <p><%= lorem.sentences 2 %></p>
+      </div>
+    </div>
+
+    <div class="sec2-c">
+      <div class="section-left">
+        <div class="process-video">
+          <iframe src="https://player.vimeo.com/video/119413042?byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="sec2-c-right">
+        <h2>Our process is second to none</h2>
+        <p><%= lorem.sentences 6 %></p>
+        <p><%= lorem.sentences 3 %></p>
+        <strong>Download more info on <%= link_to 'our process', '/' %></strong>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= partial "partials/layouts/cta_see" %>
