@@ -1,6 +1,5 @@
-<div class="container">
   <% content_tag(:div, class: "home-card") do %>
-    <% link_to(href, class: "product-tile") do %>
+    <% link_to(href) do %>
       <div class="card-image">
         <%= image_tag image %>
       </div>
@@ -15,4 +14,3 @@
       <p><a href="<%= href %>">Learn More</a>
     </div>
   <% end %>
-</div>

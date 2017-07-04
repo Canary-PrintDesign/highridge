@@ -1,0 +1,30 @@
+---
+title: Highridge|Contact Highridge
+headline: <strong>Contact</strong> Highridge
+subhead: Subhead about reaching out to us to have us help build your dream home.
+bg: herollax2
+---
+
+<div class="container">
+  <div class="section-left">
+    <h2>Don't be a stranger</h2>
+    <p><%= lorem.sentences 4 %></p>
+    <h4>Send us an <%= link_to 'email', 'mailto:#' %></h4>
+  </div>
+  <div class="contact-right">
+    <h2>&zwnj;&zwnj;</h2>
+    <p>
+      <strong>Highridge homes</strong>
+      <br>4201 27 st
+      <br>Vernon, BC V1t 4Y3
+      <br><%= link_to '1-250-558-3339', 'tel:+1-250-558-3339' %>
+    </p>
+  </div>
+</div><!-- Because we're going full screen now, we close the container div so we can spill out -->
+<div class="clearfix"></div>
+<div class="location">
+  <!--Insert pin point Google Map here -->
+  <%= partial "partials/google_map" %>
+</div>
+
+<%= partial "partials/layouts/cta_see" %>

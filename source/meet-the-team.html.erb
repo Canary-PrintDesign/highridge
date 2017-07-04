@@ -1,0 +1,25 @@
+---
+title: Highridge|About Highridge
+headline: <strong>About</strong> Highridge
+subhead: Subhead about how out team will do everything for you.
+bg: herollax2
+---
+
+<div class="container">
+  <div class="team-content">
+    <div class="section-left">
+      <h2>We're here to <br>serve you</h2>
+      <p><%= lorem.sentences 5 %></p>
+      <strong>Call us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339' %> for an info package and on-site consultation.</strong>
+    </div>
+    <div class="testimonial-right">
+      <p><%= lorem.sentences 2 %></p>
+    </div>
+  </div>
+  <div class="clearfix"></div><br><br><br>
+
+  <%= partial "partials/team_member_list" %>
+</div>
+
+<%= partial "partials/layouts/cta_see" %>
+

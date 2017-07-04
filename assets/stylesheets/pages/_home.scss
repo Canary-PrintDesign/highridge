@@ -1,5 +1,86 @@
 .home {
+  
+  .lines { 
+    opacity: 0.5;
+    position: absolute;
+    padding-left: 8px;
+    margin: 0;
+ 
+    .line1{
+      border-right : solid 2px $white;
+      width: 100px;
+      height: 20px;
+      margin-top: -55px;
+    }
 
+    .line2 {
+      height: 40px;
+      width: 100px;
+      border-right: solid 2px $brand-secondary;
+    }
+
+    .line3 {
+      border-right: solid 2px transparent;
+      height: 200px;
+    }
+
+    .line4 {
+      border-right: solid 2px $brand-secondary;
+      height: 60px;
+      width: 100px
+    }
+
+    .line5 {
+      border-top: solid 2px $brand-secondary;
+      height: 2px;
+      width: 102px;
+    }
+
+    .line6 {
+      border-left: solid 2px $brand-secondary;
+      height: 93px;
+      width: 2px;
+      margin-top: -2px;
+    }
+
+    .line7 {
+      border-left: solid 2px $white;
+      width: 2px;
+      height: 20px;
+    }
+
+    .line8 {
+      border-left: solid 2px transparent;
+      width: 2px;
+      height: 340px;
+    }
+
+    .line9 {
+      border-left: solid 2px $white;
+      height: 20px;
+      width: 2px;
+    }
+
+    .line10 {
+      border-left: solid 2px $brand-secondary;
+      height: 60px;
+      width: 2px;
+    }
+  }
+
+    .line11 {
+      border-top: solid 2px $brand-secondary;
+      width: 602px;
+      height: 2px;
+    }
+  
+    .line12 {
+      border-right: solid 2px $brand-secondary;
+      width: 600px;
+      height: 50px;
+      margin-top: -2px;
+    }
+  
   .intro-section {
     display: flex;
     padding-bottom: $nav-height;
@@ -23,7 +104,7 @@
 
         a {
           color: $white;
-          border-bottom: 2px solid $white;
+          @include white-underline;
         }
       }
     }
@@ -44,7 +125,6 @@
 
         a {
           color: $brand-primary;
-          border-bottom: 2px solid $brand-primary;
         }
       }
     }
@@ -53,56 +133,39 @@
       position: relative;
       top: -20px;
 
-      .container {
-        .home-card {
+      .home-card {
+        margin-bottom: 0;
+
+        .availability {
+          display: none;
+        }
+
+        .details {
+          background: $white;
+          color: $thunder;
+          padding-left: 0;
           margin-bottom: 0;
 
-          .availability {
-            display: none;
-          }
-
-          .details {
-            background: $white;
-            color: $thunder;
-            padding-left: 0;
-            margin-bottom: 0;
-
-            > * {
-              padding-left: 10px;
-              padding-right: 10px;
-            }
+          > * {
+            padding-left: 10px;
+            padding-right: 10px;
           }
         }
-      }
-      .cta-card1 {
-      }
-
-      .cta-card2 {
       }
     }
   }
 
+  .outro {
+    padding: 3rem 0rem;
+  }
+  
   .contact-cta {
     @include span(4);
     padding-left: span(1 wide);
-
-    p {
-
-    }
 
     .call-us {
       font-family: $font-family-heading;
       font-weight: 500;
     }
-
-    a {
-      font-weight: 600;
-      color: $thunder;
-      border-bottom: 2px solid $brand-primary;
-    }
   }
-
-
-
-
 }

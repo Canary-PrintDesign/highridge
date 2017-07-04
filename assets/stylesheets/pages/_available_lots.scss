@@ -1,0 +1,36 @@
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .section-left {
+
+    p {
+
+      &.call {
+        @include span(3 of 5 first);
+        font-family: $font-family-heading;
+        font-weight: 500;
+      }
+
+      &.download {
+        @include span(2 of 5);
+        text-align: center;
+      }
+
+      &.mla-link {
+        @include span(4 of 5 first);
+      }
+    }
+  }
+}
+
+.get-in-touch {
+  @include span(4);
+  padding-left: span(1);
+
+  strong {
+    font-family: $font-family-heading;
+    font-weight: 500;
+  }
+}

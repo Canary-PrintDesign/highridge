@@ -21,9 +21,18 @@ h2 {
 }
 
 a {
+  font-family: $font-family-heading;
+  font-weight: 600;
+  color: $thunder;
   text-decoration: none;
+  text-transform: uppercase;
+  @include orange-underline;
 
   &:hover, &:active {
     opacity: .7;
   }
+}
+
+p {
+  line-height: 1.7rem;
 }

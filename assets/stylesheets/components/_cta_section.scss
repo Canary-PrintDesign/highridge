@@ -1,5 +1,38 @@
 .cta-section {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background-color: $brand-primary;
   color: $white;
+  margin-top: 3rem;
+
+  .cta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cta-heading {
+      @include span(2);
+      padding-left: span(1);
+    }
+
+    .cta-subheading {
+      @include span(6);
+      text-align: center;
+
+      span {
+        display: block;
+      }
+    }
+
+    .cta-contact {
+      @include span(2);
+      font-family: $font-family-heading;
+      text-align: right;
+
+      a {
+        color: white;
+        @include white-underline;
+      }
+    }
+  }
+
 }

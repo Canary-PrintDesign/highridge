@@ -26,20 +26,14 @@
 
         a {
           float: left;
-          font-family: $font-family-heading;
-          list-style: none;
           padding: 0.5rem;
-          text-transform: uppercase;
           color: white;
           font-size: 14px;
-          text-decoration: none;
-          text-decoration-style: none;
-          text-transform: uppercase;
+          border-bottom: none;
         }
       }
 
      .login a {
-        font-family: $font-family-heading;
         color: $white;
         border: 1px solid $white;
         float: right;
@@ -47,7 +41,6 @@
         margin: 1rem 0rem 0rem 0rem;
         outline: none;
         padding: 0.5rem;
-        text-decoration: none;
       }
     }
   }

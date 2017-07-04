@@ -1,0 +1,13 @@
+.contact {
+
+  .contact-right {
+    @include span(3);
+    padding-left: span(1 wide);
+    font-family: $font-family-heading;
+
+    strong {
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
