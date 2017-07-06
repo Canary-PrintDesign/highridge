@@ -63,7 +63,12 @@
 
 // For ONLY Home hero
 
-.home {
+.index {
+
+  .hero-white {
+    display: none;
+  }
+
   .home-hero {
     padding-bottom: 35px;
     color: $white;
