@@ -9,6 +9,7 @@
     <title><%= current_page.data.title || "Highridge Homes" %></title>
     <%= stylesheet_link_tag "site.bundle" %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
 
   <body class="<%= page_classes %>">
@@ -23,6 +24,7 @@
     <%= partial "partials/layouts/page_footer" %>
 
     <%= partial "partials/google_analytics" %>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <%= javascript_include_tag "site.bundle" %>
   </body>
 </html>
