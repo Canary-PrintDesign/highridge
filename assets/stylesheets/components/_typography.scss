@@ -36,3 +36,13 @@ a {
 p {
   line-height: 1.7rem;
 }
+
+.btn {
+  text-decoration: none;
+
+  a {
+    color: $white;
+    @include white-underline;
+  }
+}
+
