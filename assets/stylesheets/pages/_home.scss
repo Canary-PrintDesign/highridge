@@ -68,18 +68,31 @@
     }
   }
 
-    .line11 {
-      border-top: solid 2px $brand-secondary;
-      width: 602px;
-      height: 2px;
-    }
+  .line11 {
+    border-top: solid 2px $brand-secondary;
+    width: 602px;
+    height: 2px;
+  }
 
-    .line12 {
-      border-right: solid 2px $brand-secondary;
-      width: 600px;
-      height: 50px;
-      margin-top: -2px;
+  .line12 {
+    border-right: solid 2px $brand-secondary;
+    width: 600px;
+    height: 50px;
+    margin-top: -2px;
+  }
+
+  .page-content {
+    .home-hero {
+      p {
+        a {
+          margin-left: .5rem;
+          font-weight: 400;
+          font-size: 1rem;
+          @include white-underline;
+        }
+      }
     }
+  }
 
   .intro-section {
     display: flex;
@@ -116,6 +129,7 @@
 
     .cta-content {
       @include span(4 first);
+      margin-top: 15px;
 
       .custom-home-button {
         @include span(3 of 4 first);
@@ -167,5 +181,9 @@
       font-family: $font-family-heading;
       font-weight: 500;
     }
+  }
+
+  .page-footer {
+    margin-top: 2rem;
   }
 }

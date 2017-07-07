@@ -25,7 +25,6 @@ a {
   font-weight: 600;
   color: $thunder;
   text-decoration: none;
-  text-transform: uppercase;
   @include orange-underline;
 
   &:hover, &:active {

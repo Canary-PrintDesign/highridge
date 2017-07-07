@@ -1,36 +1,46 @@
-.intro-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.available-lots {
 
-  .section-left {
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    p {
+    .section-left {
 
-      &.call {
-        @include span(3 of 5 first);
-        font-family: $font-family-heading;
-        font-weight: 500;
-      }
+      p {
 
-      &.download {
-        @include span(2 of 5);
-        text-align: center;
-      }
+        &.call {
+          @include span(3 of 5 first);
+          font-family: $font-family-heading;
+          font-weight: 500;
+        }
 
-      &.mla-link {
-        @include span(4 of 5 first);
+        &.download {
+          @include span(2 of 5);
+          text-align: center;
+        }
+
+        &.mla-link {
+          @include span(4 of 5 first);
+        }
       }
     }
   }
-}
 
-.get-in-touch {
-  @include span(4);
-  padding-left: span(1);
+  .get-in-touch {
+    @include span(4);
+    padding-left: span(1);
 
-  strong {
-    font-family: $font-family-heading;
-    font-weight: 500;
+    strong {
+      font-family: $font-family-heading;
+      font-weight: 500;
+    }
   }
+
+  .page-footer {
+    margin-top: 3rem;
+  }
+
 }
+
+
