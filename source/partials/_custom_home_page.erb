@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="home-title">
+    <h2><%= address %></h2>
+  </div>
+  <div class="home-info">
+    <p><%= details %></p>
+    <btn class="btn primary">
+      <a href="<%= listinglink %>">View Listing on 3% Realty</a>
+    </btn>
+  </div>
+  <div class="home-specs">
+    <p>
+      <table>
+        <tr>
+          <td><strong>Bedrooms</strong></td>
+          <td><%= bedrooms %></td>
+        </tr>
+        <tr>
+          <td><strong>Bathrooms</strong></td>
+          <td><%= bathrooms %></td>
+        </tr>
+        <tr>
+          <td><strong>Floor Space</strong></td>
+          <td><%= floorspace %></td>
+        </tr>
+        <tr>
+          <td><strong>Land Size</strong></td>
+          <td><%= landsize %></td>
+        </tr>
+        <tr>
+          <td><strong>View</strong></td>
+          <td><%= view %></td>
+        </tr>
+      </table>
+    </p>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="flickity">
+    <div class="carousel" data-flickity='{ "wrapAround": true, "setGallerySize": false }'>
+      <% current_page.data.photo_list.each do |f| %>
+        <div class="carousel-cell">
+          <img src='<%= f %>.jpg' />
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<iframe src="<%= maplink %>" width="100%" height="300px" frameborder="0" style="display:block;border:0" scrolling="no" ></iframe>
+
+
+

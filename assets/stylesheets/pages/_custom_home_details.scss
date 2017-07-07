@@ -1,0 +1,104 @@
+.custom-homes {
+
+  .page-content {
+
+    .home-title {
+      @include span(11);
+      padding-left: span(1);
+      padding-top: 2rem;
+    }
+
+    .home-info {
+      @include span(6);
+      padding-left: span(1);
+
+      btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: .8rem;
+
+        a {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .home-specs {
+      @include span(3);
+      padding-left: span(1 wide);
+
+      table {
+        tr {
+          td {
+            padding-right: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .flickity {
+      margin-top: 6rem;
+      margin-bottom: 8rem;
+
+      .carousel {
+        background: transparent;
+
+        .carousel-cell {
+          margin-right: 20px;
+          overflow: hidden;
+
+          img {
+            display: block;
+            height: 725px;
+            background: #FAFAFA;
+          }
+        }
+
+        .flickity-prev-next-button {
+          width: 60px;
+          height: 60px;
+
+          .arrow {
+            fill: $brand-primary;
+          }
+        }
+
+        .flickity-page-dots {
+          bottom: -2rem;
+          padding-top: 1rem;
+
+          .dot {
+            background: $brand-primary;
+            opacity: .5;
+            height: 13px;
+            width: 13px;
+
+            &.is-selected {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cta-section {
+    margin-top: 0;
+  }
+}
+
+
+@media screen and ( max-width: 768px ) {
+  .custom-homes {
+    .page-content {
+      .flickity {
+        .carousel {
+          .carousel-cell {
+
+          }
+        }
+      }
+    }
+  }
+}
