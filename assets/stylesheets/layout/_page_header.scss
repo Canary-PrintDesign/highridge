@@ -66,6 +66,15 @@
           margin: 30px 20px 0px 20px;
           border-bottom: none;
 
+          &:hover {
+            @include orange-underline;
+          }
+
+          &[aria-current]:not([aria-current="false"]) {
+            color: #847373;
+            @include orange-underline;
+          }
+
           &:last-child {
             margin-right: 0px;
           }

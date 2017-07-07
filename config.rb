@@ -20,6 +20,7 @@ activate :external_pipeline,
   latency: 1
 
 activate :directory_indexes
+activate :aria_current
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
