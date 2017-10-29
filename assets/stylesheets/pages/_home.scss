@@ -21,7 +21,7 @@
 
     .line3 {
       border-right: solid 2px transparent;
-      height: 200px;
+      height: 254px;
     }
 
     .line4 {
@@ -80,6 +80,50 @@
     height: 50px;
     margin-top: -2px;
   }
+
+//Start of responsiive code for lines//
+  @media only screen and (max-width: 1250px) {
+    .lines{
+      margin-left: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .lines{
+      margin-left: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .lines{
+      margin-left: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 1143px) {
+    .lines{
+      margin-left: 90px;
+      
+      .line3{
+        height: 281px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1075px) {
+    .lines{
+      .line10{
+        height: 80px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 975px) {
+    .lines{
+      visibility: hidden;
+    }
+  }
+//End of responsive code for lines//
 
   .page-content {
     .home-hero {
