@@ -7,3 +7,20 @@
 
   }
 }
+//End of Responsive code//
+
+  @media only screen and (max-width: 750px) { 
+    .content-wrapper{
+      display: block !important;
+    }
+    .section-left{
+      width: span(10) !important;
+      padding-bottom: 1rem !important;
+    }  
+    .testimonial-right{
+      width: span(10) !important;
+      margin-bottom: 4rem;
+      text-align: left;
+    }
+  }
+//End of Responsive code//

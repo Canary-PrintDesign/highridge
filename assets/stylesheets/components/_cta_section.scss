@@ -34,5 +34,36 @@
       }
     }
   }
-
 }
+//Start of Responsive code//
+  @media only screen and (max-width: 1000px) { 
+    .cta-section{
+      display: flex;
+      
+      .cta-wrapper{
+        display: block;
+        
+        .cta-heading{
+          align-items: center;
+          display: block;
+          text-align: center;
+          width: span(10);
+        }
+        .cta-subheading{
+          display: block;
+          float: left;
+          padding-left: span(1);
+          width: span(10);
+        }
+        .cta-contact{
+          align-items: center;
+          display: block;
+          float: left;
+          padding-left: span(1);
+          text-align: center;
+          width: span(10);
+        }
+      } 
+    }
+  }
+//End of Responsive code//

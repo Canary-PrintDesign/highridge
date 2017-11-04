@@ -1,0 +1,22 @@
+<div class="burger-nav">
+  <div class="container">
+    <div class="burger-nav-container">
+      <nav role="navigation">
+        <div class="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+            <ul class="menu">
+              <%= current_link_to 'Custom Homes', '/custom-homes/' %>
+              <%= current_link_to 'The Process', '/the-process/' %>
+              <%= current_link_to 'Available Lots', '/available-lots/' %>
+              <%= current_link_to 'Meet The Team', '/meet-the-team/' %>
+              <%= current_link_to 'Contact', '/contact/' %>
+              <%= link_to 'Client login', '/Client-login', :class => 'login' %>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -40,7 +40,35 @@
   .page-footer {
     margin-top: 3rem;
   }
-
 }
-
-
+//Start of Responsive code//
+  @media only screen and (max-width: 800px) {
+  .call {
+      display: block !important;
+      width: span(10) !important;
+    }
+    .download {
+      display: block !important;
+      margin-left: auto !important;
+      width: span(10) !important;
+      text-align: left !important;
+    }
+    mla-link {
+      display: block !important;
+      width: span(10) !important;  
+    }
+  }
+  @media only screen and (max-width: 750px) { 
+    .section-left {
+      width: span(11) !important;
+    }
+    .intro-section {
+      @include span(10);
+      display: block !important;
+    }
+    .get-in-touch {
+      display: block !important;
+      width: span(10) !important;
+    }
+  } 
+//End of Responsive code//

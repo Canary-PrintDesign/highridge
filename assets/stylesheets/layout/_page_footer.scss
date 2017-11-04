@@ -45,3 +45,30 @@
     }
   }
 }
+//Start of Responsive code//
+  @media only screen and (max-width: 1200px) { 
+    .footer-content{
+      .footer-logo{
+        padding-left: span(1);
+        padding-right: span(1);
+      }
+    }
+      .login a{
+        margin-right: span(1 wide) !important;
+      }
+    }
+
+  @media only screen and (max-width: 700px) { 
+    .footer-content{
+      .footer-logo{
+        padding-left: span(1);
+      }
+      .column{
+        display: none;
+      }
+      .login a{
+        margin-right: span(1 wide) !important;
+      }
+    }
+  } 
+//End of Responsive code//

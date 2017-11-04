@@ -4,6 +4,9 @@
       <% link_to '/', :class => 'logo-link' do %>
         <%= image_tag 'logo-white.png', :class => 'site-logo' %>
       <% end %>
+      <% link_to '/', :class => 'logo-link' do %>
+        <%= image_tag 'logo-colour.png', :class => 'site-logo-colour' %>
+      <% end %>
       <div class="nav-right">
         <div class="contact">
           Reach us at <%= link_to '1-250-558-3339', 'tel:1-250-558-3339', :class => 'phone' %>
@@ -15,7 +18,7 @@
             <%= image_tag 'facebook_icon.png', :class => 'social' %>
           <% end %>
         </div>
-        <nav>
+        <nav class='main_nav'>
           <ul>
             <%= current_link_to 'Custom Homes', '/custom-homes/' %>
             <%= current_link_to 'The Process', '/the-process/' %>

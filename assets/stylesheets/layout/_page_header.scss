@@ -22,6 +22,14 @@
       width: 186px;
     }
 
+    .site-logo-colour {
+      float: left;
+      padding: 30px;
+      position: absolute;
+      top:0;
+      width: 100px;
+    }
+
     .nav-right {
       margin-right: 20px;
 
@@ -89,3 +97,26 @@
     }
   }
 }
+//Start of Responsive code//
+  @media only screen and (max-width: 1075px) {
+    .main_nav {
+      display: none;
+    }
+  }
+@media only screen and (min-width: 676px) {
+  .site-logo-colour {
+      display: none;
+    }
+}
+  @media only screen and (max-width: 675px) {
+    .site-logo {
+      display: none;
+    }
+    .site-logo-colour {
+      display: block;
+    }
+    .nav-right {
+      display: none;
+    }
+  }
+//End of Responsice code//

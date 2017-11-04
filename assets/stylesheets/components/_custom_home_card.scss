@@ -35,7 +35,7 @@
   }
 
   .details {
-    @include span(12);
+    @include span(11);
     padding-left: 15px;
     margin-left: 0;
     margin-bottom: 30px;
@@ -49,4 +49,199 @@
     }
   }
 }
-
+///Start of Responsive code/
+  @media only screen and (max-width: 1200px) {
+    .custom-homes .home-card:first-child {
+      margin-left: span(1);
+    }
+    .custom-homes .home-card:nth-child(3n + 4) {
+      margin-left: span(1);
+    }
+    .home-card {
+      @include span (5);
+      display: block;
+      margin-left: span(1);
+      margin-bottom: 60px; 
+  }
+}
+  @media only screen and (max-width: 1024px) {
+    .custom-homes .home-card:first-child {
+      margin-left: span(3);
+    }
+    .custom-homes .home-card:nth-child(3n + 4) {
+      margin-left: span(3);
+    }
+    .home-card {
+      @include span (6); 
+      margin-left: span(3);
+      margin-bottom: 60px;
+      .card-image {
+        img{
+          max-height: 250px !important;
+        }
+      }
+      .availability {
+        margin-top: 3rem !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .custom-homes .home-card:first-child {
+      margin-left: span(2);
+    }
+    .custom-homes .home-card:nth-child(3n + 4) {
+      margin-left: span(2);
+    }
+    .home-card {
+      @include span (8);
+      margin-left: span(2);
+  }
+}
+  @media only screen and (max-width: 533px) {
+    .custom-homes .home-card:first-child {
+      margin-left: span(1);
+    }
+    .custom-homes .home-card:nth-child(3n + 4) {
+      margin-left: span(1);
+    }
+    .home-card {
+      @include span (10);
+      margin-left: span(1);
+      .availability {
+        margin-top: 50px !important;
+    }
+  }
+}
+  @media only screen and (max-width: 425px) {
+    .home-card {
+      .availability {
+        margin-top: 40px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 409px) {
+    .home-card {
+      .availability {
+        margin-top: 33px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .home-card {
+      .availability {
+        margin-top: 28px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    .home-card {
+      .availability {
+        margin-top: 26px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 385px) {
+    .home-card {
+      .availability {
+        margin-top: 22px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    .home-card {
+      .availability {
+        margin-top: 20px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .home-card {
+      .availability {
+        margin-top: 16px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 370px) {
+    .home-card {
+      .availability {
+        margin-top: 12px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 365px) {
+    .home-card {
+      .availability {
+        margin-top: 10px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    .home-card {
+      .availability {
+        margin-top: 8px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 355px) {
+    .home-card {
+      .availability {
+        margin-top: 6px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 355px) {
+    .home-card {
+      .availability {
+        margin-top: 6px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .home-card {
+      .availability {
+        margin-top: 2px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 345px) {
+    .home-card {
+      .availability {
+        margin-top: -2px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .home-card {
+      .availability {
+        margin-top: -6px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 335px) {
+    .home-card {
+      .availability {
+        margin-top: -10px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .home-card {
+      .availability {
+        margin-top: -12px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 325px) {
+    .home-card {
+      .availability {
+        margin-top: -11px !important;
+      }
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .home-card {
+      .availability {
+        margin-top: -14px !important;
+      }
+    }
+  }

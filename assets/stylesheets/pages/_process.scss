@@ -78,3 +78,49 @@
     }
   }
 }
+//Start of Responsive code//
+@media only screen and (max-width: 950px) {
+  .sec2-c {
+    .section-left {
+      width: span(10) !important;
+      .process-video {
+      }
+    }
+    .sec2-c-right {
+      width: span(9) !important;
+      padding-left: span(1);
+    }
+  }
+}
+  @media only screen and (max-width: 700px) { 
+    .process-sec1 {
+      display: block;
+      width: span(11);
+    }
+    .process-sec2 {
+      .sec2-a {    
+        h2{
+          clear: both;
+          padding-left: span(1 wide);
+          width: span(11);
+        }
+        p {
+          clear: both;
+          margin-top: 1rem;
+          margin-top: 1rem;
+          padding-left: span(1);
+          width: span(11);
+        }
+      }
+      .sec2-b {
+        width: span(11);
+        .warins {
+          @include span(11);
+        }
+        .insurance {
+          padding-left: span(1) !important;
+        }
+      }  
+    }
+  }
+//End of Responsive code//

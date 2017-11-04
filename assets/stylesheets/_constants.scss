@@ -40,6 +40,13 @@ $susy: (
     // Code for animation goes here
   }
 }
+@mixin dark-underline {
+  border-bottom: 2px solid $temptress;
+
+  &:hover, &:active {
+    // Code for animation goes here
+  }
+}
 
 @mixin white-underline {
   border-bottom: 2px solid $white;

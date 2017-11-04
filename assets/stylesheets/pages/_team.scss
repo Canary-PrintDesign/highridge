@@ -46,3 +46,20 @@
 .derek {
   padding-left: span(2);
 }
+//Start of Responsive code//
+  @media only screen and (max-width: 700px) {  
+    .team-content {
+      display: block !important;
+        .section-left {
+          width: span(10) !important;
+        } 
+    }
+    .team-member {
+      width: span(11) !important;
+      float: none;
+    }
+    .derek {
+      padding-left: 0px;
+    }
+  }
+//End of Responsive code//

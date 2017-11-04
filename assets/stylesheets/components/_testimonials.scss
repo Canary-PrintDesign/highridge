@@ -51,3 +51,19 @@
     bottom: 30px;
   }
 }
+//Start of Responsive code// 
+  @media only screen and (max-width: 700px) { 
+    .testimonial-left{
+      width: span(10);
+      display: block !important;
+    }
+    .testimonial-right{
+      clear: both;
+      float: left;
+      text-align: left;
+      @include span(10);
+      padding-left: span(1 wide);
+      padding-right: 0px;
+    }
+  }
+//End of Responsive code for MOBILE//
