@@ -18,11 +18,11 @@
   text-align: center;
 
   .team-image {
-    height: 170px;
+    height: 350px;
 
     img {
       // width: 100%;
-      max-height: 170px;
+      max-height: 350px;
     }
   }
 
@@ -47,12 +47,12 @@
   padding-left: span(2);
 }
 //Start of Responsive code//
-  @media only screen and (max-width: 700px) {  
+  @media only screen and (max-width: 700px) {
     .team-content {
       display: block !important;
         .section-left {
           width: span(10) !important;
-        } 
+        }
     }
     .team-member {
       width: span(11) !important;
