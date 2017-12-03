@@ -18,6 +18,7 @@
         .site-logo {
           width: 125px;
           float: left;
+          display: block;
         }
       }
 
@@ -57,18 +58,71 @@
         margin-right: span(1 wide) !important;
       }
     }
-
   @media only screen and (max-width: 700px) { 
-    .footer-content{
-      .footer-logo{
-        padding-left: span(1);
+    .page-footer{
+      height: auto;
+    }
+    .page-footer .container{
+      .footer-content{
+        padding-top: 40px;
+        float: none;
+        content: "";
+        display: table;
+        clear: both;
+        .column {
+          width: 30%;
+          text-align: center;
+        }
+        .login{
+          clear: both;
+          width: 100%;
+          text-align: center;
+          padding: 35px 0 50px;
+          a {
+            float: none;
+            margin-right: 0;
+          }
+        }
+        .footer-logo{
+          padding-left: 0;
+          padding-right: 0;
+          float: none;
+          width: 100%;
+          .site-logo {
+            float: none;
+            display: inline-block;
+            margin-bottom: 30px;
+          }
+          a {
+            border-bottom: none;
+            display: block;
+            text-align: center;
+            float: none;
+          }
+        }
+        .column{
+          a {
+            float: none;
+          }
+          
+        }
+        .login a{
+          margin-right: 0!important;
+        }
       }
-      .column{
-        display: none;
-      }
-      .login a{
-        margin-right: span(1 wide) !important;
+    }
+    .page-footer .container{
+      .footer-content{
+        .column {
+          width: 100%;
+          margin-left: 0;
+          float: none;
+          a {
+            display: block;
+          }
+        }
       }
     }
   } 
+
 //End of Responsive code//

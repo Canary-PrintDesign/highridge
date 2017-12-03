@@ -2,7 +2,7 @@
   @include span(4);
   font-family: $font-family-body;
   font-style: italic;
-  line-height: 28px;
+  line-height: 36px;
   font-size: 18px;
   position: relative;
 
@@ -19,6 +19,8 @@
 
   p {
     margin-left: 20px;
+    font-style: italic;
+    line-height: 36px;
   }
 
   ::before {
@@ -38,6 +40,7 @@
 
   p {
     margin-right: 20px;
+    line-height: 36px;
   }
 
   ::before {
@@ -48,22 +51,24 @@
 
   ::after {
     line-height: 0;
-    bottom: 30px;
+    bottom: 11px;
   }
 }
 //Start of Responsive code// 
   @media only screen and (max-width: 700px) { 
     .testimonial-left{
-      width: span(10);
-      display: block !important;
+      width: auto;
+      display: block;
+      float: none;
+      padding: 0 20px;
+      margin-left: 0;
     }
     .testimonial-right{
-      clear: both;
-      float: left;
-      text-align: left;
-      @include span(10);
-      padding-left: span(1 wide);
-      padding-right: 0px;
+      width: auto;
+      display: block;
+      float: none;
+      padding: 0 20px;
+      margin-left: 0;
     }
   }
 //End of Responsive code for MOBILE//

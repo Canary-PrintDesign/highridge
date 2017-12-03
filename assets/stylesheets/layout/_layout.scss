@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -26,9 +27,12 @@ body {
 //Start of Responsive code//
   @media only screen and (max-width: 700px) {  
     .section-left{
-      width: span(10);
-      clear: both;
-      position: relative;
+      width: auto;
+      padding-bottom: 1rem !important;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 10px 20px;
+      float: none;
     }
   }
 //End of Responsive code//

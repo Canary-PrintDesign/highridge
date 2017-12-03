@@ -30,6 +30,8 @@
 
     p {
       font-size: 1.2rem;
+      max-width: 760px;
+      line-height: 2;
     }
   }
 }
@@ -83,7 +85,20 @@
 
       header {
         margin-left: span(.23);
-        top: 300px;
+        top: 340px;
+        @media only screen and (max-width: 700px) {
+          top: 235px;
+          margin-left: 0;
+          float: none;
+          position: absolute;
+          left: 0;
+          width: 88%;
+          padding-left: 0;
+          padding: 0 25px 0 20px;
+          h1 {
+            font-size: 2.8rem;
+          }
+        }
       }
     }
   }
@@ -103,7 +118,7 @@
 .home-hero {
   .hero-image {
     .herollax {
-    height: 700px;
+    height: 800px;
     background-size: cover;
     }
   }
@@ -124,11 +139,20 @@
 }
 //Start of Responsive code//
   @media only screen and (max-width: 700px) {
-    header{
-      width: span(10) !important;
+    .hero header{
+      width: auto;
+      float: none;
+      padding-left: 0;
+      margin-left: 0;
+      padding: 0 20px;
       h1{
         font-size: 2.6rem !important;
       }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .hero .hero-image .herollax {
+      background-attachment: initial;
     }
   }
 //End of Responsive code//

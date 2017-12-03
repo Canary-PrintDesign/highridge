@@ -14,13 +14,16 @@
       display: block !important;
     }
     .section-left{
-      width: span(10) !important;
+      width: auto;
       padding-bottom: 1rem !important;
     }  
-    .testimonial-right{
-      width: span(10) !important;
+    .custom-homes .testimonial-right{
+      width: auto;
+      display: block;
+      float: none;
+      padding: 0 20px;
       margin-bottom: 4rem;
-      text-align: left;
+      text-align: center;
     }
   }
 //End of Responsive code//

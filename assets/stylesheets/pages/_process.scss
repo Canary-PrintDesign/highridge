@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  iframe {
+    max-width: 100%;
+    min-height: 280px;
+    height: auto;
+  }
 }
 
 // The next weird code is to make the iframe responsive
@@ -18,6 +23,11 @@
     width: 100%;
     height: 100%;
   }
+  @media only screen and (max-width: 700px) { 
+    float: none;
+    padding-left: 0;
+    width: auto;
+  }
 }
 
 .process-sec2 {
@@ -26,11 +36,16 @@
   .sec2-a {
     @include span(9);
     padding-left: span(1);
-
+    padding-top: 50px;
     h2 {
       @include span(2 of 9 wide first);
       margin-top: 2rem;
       margin-bottom: 2rem;
+      @media only screen and (max-width: 700px) { 
+        float: none;
+        padding-left: 0;
+        width: auto;
+      }
     }
 
     p {
@@ -38,10 +53,22 @@
       padding-left: span(1 wide);
       margin-top: 2rem;
       margin-bottom: 2rem;
-
+      @media only screen and (max-width: 700px) { 
+        float: none;
+        padding-left: 0;
+        width: auto;
+        margin-left: 0;
+      }
       &:after {
         clear: both;
       }
+    }
+    @media only screen and (max-width: 700px) { 
+      float: none;
+      padding-left: 0;
+      width: auto;
+      margin-left: 0;
+      padding: 0px 20px;
     }
   }
 
@@ -54,14 +81,33 @@
       a {
         border-bottom: none;
       }
+      @media only screen and (max-width: 700px) { 
+        float: none;
+        padding-left: 0;
+        width: auto;
+      }
     }
 
     .warranty {
       padding-left: span(1);
+      @media only screen and (max-width: 700px) { 
+        padding-left: 0;
+        margin-left: 0;
+      }
     }
 
     .insurance {
       padding-left: span(1 wide);
+      @media only screen and (max-width: 700px) { 
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+     @media only screen and (max-width: 700px) { 
+      float: none;
+      padding-left: 0;
+      width: auto;
+      padding: 0 20px;
     }
   }
 
@@ -75,52 +121,39 @@
       h2 {
         margin-top: 0;
       }
+      @media only screen and (max-width: 700px) { 
+        float: none;
+        padding-left: 0;
+        width: auto;
+        margin-left: 0;
+        padding: 20px 20px 0;
+      }
+    }
+    @media only screen and (max-width: 700px) { 
+      float: none;
+      padding-left: 0;
+      width: auto;
     }
   }
 }
 //Start of Responsive code//
-@media only screen and (max-width: 950px) {
-  .sec2-c {
-    .section-left {
-      width: span(10) !important;
-      .process-video {
+
+  @media only screen and (max-width: 700px) { 
+    .the-process {
+      .process-sec1 {
+        .section-left {
+          padding: 10px 0;
+        }
+      }
+      .testimonial-right {
+        text-align: center;
+        margin-bottom: 40px;
       }
     }
-    .sec2-c-right {
-      width: span(9) !important;
-      padding-left: span(1);
-    }
-  }
-}
-  @media only screen and (max-width: 700px) { 
     .process-sec1 {
       display: block;
-      width: span(11);
-    }
-    .process-sec2 {
-      .sec2-a {    
-        h2{
-          clear: both;
-          padding-left: span(1 wide);
-          width: span(11);
-        }
-        p {
-          clear: both;
-          margin-top: 1rem;
-          margin-top: 1rem;
-          padding-left: span(1);
-          width: span(11);
-        }
-      }
-      .sec2-b {
-        width: span(11);
-        .warins {
-          @include span(11);
-        }
-        .insurance {
-          padding-left: span(1) !important;
-        }
-      }  
+      width: auto;
+      padding: 0 20px;
     }
   }
 //End of Responsive code//

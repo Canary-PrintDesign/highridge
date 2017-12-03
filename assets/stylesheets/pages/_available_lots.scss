@@ -43,32 +43,58 @@
 }
 //Start of Responsive code//
   @media only screen and (max-width: 800px) {
-  .call {
-      display: block !important;
-      width: span(10) !important;
-    }
-    .download {
-      display: block !important;
-      margin-left: auto !important;
-      width: span(10) !important;
-      text-align: left !important;
-    }
-    mla-link {
-      display: block !important;
-      width: span(10) !important;  
+    .available-lots{
+      .intro-section .section-left{
+        p.call {
+          display: block;
+          width: span(10);
+          float: none;
+        }
+        p.download {
+          display: block;
+          margin-left: auto;
+          width: 100%;
+          text-align: left;
+          float: none;
+          padding: 10px 0;
+          border-top: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          margin-bottom: 20px;
+        }
+        p.mla-link {
+          display: block ;
+          width: 100%;  
+          float: none;
+          span {
+            padding: 5px 20px 9px;
+            display: inline-block;
+          }
+        }
+      }
+      .get-in-touch {
+        display: block;
+        width: auto;
+        margin-left: 0;
+        padding-left: 0;
+        padding: 0 20px;
+        text-align: center;
+      }
     }
   }
   @media only screen and (max-width: 750px) { 
-    .section-left {
-      width: span(11) !important;
-    }
-    .intro-section {
-      @include span(10);
-      display: block !important;
-    }
-    .get-in-touch {
-      display: block !important;
-      width: span(10) !important;
+    .available-lots{
+      .section-left {
+        width: auto;
+        float: none;
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 30px;
+      }
+      .intro-section {
+        width: 100%;
+        padding: 0 20px;
+        display: block ;
+      }
     }
   } 
 //End of Responsive code//
