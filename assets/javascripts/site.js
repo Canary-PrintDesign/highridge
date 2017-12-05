@@ -34,3 +34,12 @@ $('form').submit(function(e) {
   })
 
 });
+
+// Disable click on map until clicked
+$('.available-map').click(function () {
+    $('.available-map iframe').css("pointer-events", "auto");
+});
+
+$( ".available-map" ).mouseleave(function() {
+  $('.available-map iframe').css("pointer-events", "none");
+});

@@ -27,6 +27,10 @@
     }
   }
 
+  .available-map iframe {
+    pointer-events: none;
+  }
+
   .get-in-touch {
     @include span(4);
     padding-left: span(1);
@@ -63,7 +67,7 @@
         }
         p.mla-link {
           display: block ;
-          width: 100%;  
+          width: 100%;
           float: none;
           span {
             padding: 5px 20px 9px;
@@ -81,7 +85,7 @@
       }
     }
   }
-  @media only screen and (max-width: 750px) { 
+  @media only screen and (max-width: 750px) {
     .available-lots{
       .section-left {
         width: auto;
@@ -96,5 +100,5 @@
         display: block ;
       }
     }
-  } 
+  }
 //End of Responsive code//
