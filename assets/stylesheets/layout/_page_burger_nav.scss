@@ -66,12 +66,12 @@
   background: $zest;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  transform: translate(100%, 0); 
+  transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   li {
     padding: 10px 0px;
     font-size: 22px;
-  } 
+  }
   a {
     border-bottom: none;
     color: $white;
@@ -82,6 +82,7 @@
     margin: 30px 20px 0px 20px;
     text-transform: uppercase;
     word-spacing: 3px;
+    border-bottom: 2px solid transparent;
 
     &:hover {
       @include dark-underline;
@@ -104,7 +105,7 @@
       .menuToggle {
       display: none;
       }
-    } 
+    }
   }
   @media only screen and (max-width: 1075px) {
     .burger-nav {
