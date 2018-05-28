@@ -21,6 +21,7 @@ activate :external_pipeline,
 
 activate :directory_indexes
 activate :aria_current
+activate :asset_hash
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
