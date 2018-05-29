@@ -21,7 +21,7 @@ activate :external_pipeline,
 
 activate :directory_indexes
 activate :aria_current
-activate :asset_hash
+activate :asset_hash, :exts => %w(.css) # Only hash for .css
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
